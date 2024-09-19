@@ -1,1 +1,1 @@
-# C
+# C buyich urgangan narsalarim
