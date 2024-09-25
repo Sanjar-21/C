@@ -1,11 +1,11 @@
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
-int main(void){
+int main(void) {
   char a[] = "SDAJWFAHAUOVAVJALSJADHKWJFHWKRJF";
   char b[sizeof(a)];
-  for(int i = 0; i < strlen(a); i++){
+  for (int i = 0; i < strlen(a); i++) {
     b[i] = tolower(a[i]);
   }
   b[strlen(a)] = '\0';
