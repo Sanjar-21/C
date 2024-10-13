@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void){
+int main(void) {
   int grade1 = 91;
   int grade2 = 82;
   int grade3 = 73;
@@ -30,7 +30,7 @@ int main(void){
   //   printf("Grade [%d] = %d\n", i, grade[i]);
   // }
   int num = 0;
-  for(int i = 0; i < 6; i++){
+  for (int i = 0; i < 6; i++) {
     num = num + grade[i];
   }
   int a = num / 6;
