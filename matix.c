@@ -11,4 +11,9 @@ int main(void) {
       scanf("%d", &a[i][j]);
     }
   }
+  for (int i = 0; i < ROWS; i++) {
+    for (int j = 0; j < COLS; j++) {
+      printf("a[%d][%d] = %d\n", i, j, a[i][j]);
+    }
+  }
 }
