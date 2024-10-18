@@ -1,17 +1,15 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(void) {
-  int arr[] = {
-      1, 24, 5, 6, 7, 8, 92, 3, 2, 2, 3,
-  };
-  int sum = 0;
-  int son = 2;
-  int len = sizeof(arr) / sizeof(arr[0]);
-  for (int i = 0; i < len; i++) {
-    if (arr[i] == son) {
-      sum++;
+  int n[] = {23, 12, 432, 452, 1, 4};
+  int size = sizeof(n) / sizeof(n[0]);
+  int min = n[0];
+  for (int i = 1; i < size; i++) {
+    if (n[i] < min) {
+      min = n[i];
     }
   }
-  printf("sum: %d\n", sum);
+
+  printf("min : %d\n", min);
+  return 0;
 }
