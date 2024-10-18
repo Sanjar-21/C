@@ -9,7 +9,6 @@ int main(void) {
       min = n[i];
     }
   }
-
   printf("min : %d\n", min);
-  return 0;
+  return (0);
 }
