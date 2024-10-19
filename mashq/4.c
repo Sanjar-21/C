@@ -12,6 +12,6 @@ int main(void) {
   }
 
   for (int i = 0; i < l; i++) {
-    printf("n[%d] = %d", i, b[i]);
+    printf("n[%d] = %d\n", i, b[i]);
   }
 }
