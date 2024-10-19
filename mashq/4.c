@@ -1,17 +1,16 @@
+#include <stdbool.h>
 #include <stdio.h>
+#include <string.h>
 
-int main(void) {
-  int b[] = {1, 2, 1};
-  int temp;
-  int l = 3;
+bool is_palindrom(char string[]);
 
-  for (int i = 0; i < (l - 2); i++) {
-    temp = b[i];
-    b[i] = b[l - i - 1];
-    b[l - i - 1] = temp;
+int main(void) {}
+bool is_palindrom(char string[]) {
+  int len = strlen(string) / 2;
+  for (int i = 0; i < len; i++) {
+    if (string[i] != string[len - i - 1]) {
+      return false;
+    }
   }
-
-  for (int i = 0; i < l; i++) {
-    printf("n[%d] = %d\n", i, b[i]);
-  }
+  return true;
 }
