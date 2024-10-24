@@ -9,8 +9,9 @@ int main(void) {
 
     printf("Errno befor: %d\n", errno);
     if(fh == NULL) {
-        printf("Errno after: %d\n", errno);
-        printf("String strerror: %s\n", strerror(errno));
+        // printf("Errno after: %d\n", errno);
+        //printf("String strerror: %s\n", strerror(errno));
+        perror("masseg: ");
     } else {
         fclose(fh);
     }
