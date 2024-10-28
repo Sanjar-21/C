@@ -6,7 +6,7 @@ int main(void) {
     char *reult = memchr(src, 'o', sizeof(src));
 
     if(reult != 0) {
-        printf("%c\n", reult);
+        printf("%c\n", *reult);
         printf("Joylashuv: %ld\n", reult - src);
     } else {
         perror("errno:");
